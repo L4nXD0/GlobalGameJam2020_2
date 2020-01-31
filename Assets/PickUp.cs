@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    float throwForce = 50;
+    float throwForceStart = 0;
+    float throwForceIncrement = 5;
+    public float throwForce;
     Vector3 objectPos;
     float distance;
 
@@ -15,11 +17,11 @@ public class PickUp : MonoBehaviour
     public int throwForceCap = 800;
 
 
-    /*void Start()
+    void Start()
     {
-        
-    }*/
-    
+        throwForce = throwForceStart;
+    }
+
     void Update()
     {
         distance = Vector3.Distance(item.transform.position, tempParent.transform.position);
@@ -29,6 +31,7 @@ public class PickUp : MonoBehaviour
             if (distance < 2f)
             {
                 isHolding = true;
+                throwForce = throwForceStart;
                 item.GetComponent<Rigidbody>().useGravity = false;
                 item.GetComponent<Rigidbody>().detectCollisions = true;
             }
@@ -42,10 +45,9 @@ public class PickUp : MonoBehaviour
         {
             if (throwForce < throwForceCap)
             {
-                throwForce += 10;
+                throwForce += throwForceIncrement;
             }
         }
-        
 
         if (distance > 2f)
         {
