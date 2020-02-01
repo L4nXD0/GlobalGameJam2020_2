@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044750b001ff75d4d8143a5fa0c124ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crate: {fileID: 7877134662593497160, guid: 61856e4c821f941419723cf8ea3df02f, type: 3}
+  crate: {fileID: 280159783322791684, guid: 61856e4c821f941419723cf8ea3df02f, type: 3}
   crateDelay: 2
 --- !u!1 &4768393360646809026
 GameObject:
@@ -73,7 +73,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4768393360646809026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalPosition: {x: 0, y: 1.848, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 3266706965854884677}
@@ -101,7 +101,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

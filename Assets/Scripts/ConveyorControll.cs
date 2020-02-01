@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ConveyorControll : MonoBehaviour
 {
-
     public bool working;
     // Start is called before the first frame update
 
