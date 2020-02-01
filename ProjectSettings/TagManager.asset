@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Fire
-  - Arrow
-  - Maschine
-  - Product
-  - Hammer
+  tags: []
   layers:
   - Default
   - TransparentFX
